@@ -160,3 +160,40 @@ h2 { font-family: var(--serif); font-size: clamp(3.3rem, 6.4vw, 6rem); font-weig
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
   .timeline-event { opacity: 1; transform: none; }
 }
+
+.ronaldo-page .wordmark span,
+.ronaldo-page .header-note span,
+.ronaldo-page .text-link span,
+.ronaldo-page .hero-index span,
+.ronaldo-page .timeline-note span,
+.ronaldo-page .source-link span { color: #a5463d; }
+.portugal-mark { background: linear-gradient(90deg, #176c49 0 42%, #bb493f 42%); display: inline-block; height: 12px; position: relative; width: 19px; }
+.portugal-page .flag-mark { background: linear-gradient(90deg, #176c49 0 42%, #bb493f 42%); }
+.ronaldo-page h1 em,
+.ronaldo-page h2 em { color: #a5463d; }
+.ronaldo-page .number-item strong { color: #e9c27a; }
+.ronaldo-page .trophies-number strong { color: #b8d9c6; }
+.ronaldo-page .timeline-event time,
+.ronaldo-page .achievement-list strong { color: #a5463d; }
+.ronaldo-records { background: #e8ddd2; display: grid; grid-template-columns: 1fr 1fr; min-height: 630px; }
+.ronaldo-records-image { background-color: #392e30; background-image: linear-gradient(0deg, rgba(30, 20, 22, .08), rgba(30, 20, 22, .08)), url("https://upload.wikimedia.org/wikipedia/commons/8/8e/Funchal_%28Madeira%2C_Portugal%29%2C_Museu_CR7%2C_Est%C3%A1tua_de_Cristiano_Ronaldo_--_2025_--_1320.jpg"); background-position: center 34%; background-size: cover; min-height: 520px; }
+.ronaldo-records-copy { align-self: center; max-width: 590px; padding: 5rem clamp(3rem, 7vw, 8rem); }
+.ronaldo-records-copy h2 { font-size: clamp(3.2rem, 5.2vw, 5rem); }
+.ronaldo-records-copy > p:not(.eyebrow) { color: #53626a; font-size: .84rem; line-height: 1.8; max-width: 430px; }
+.ronaldo-records .achievement-list strong { font-size: 1.15rem; }
+.ronaldo-points { border-top: 1px solid var(--ink); }
+.ronaldo-points article { border-bottom: 1px solid var(--line); display: grid; gap: 1rem; grid-template-columns: 2.2rem 1fr; padding: 1.05rem 0; }
+.ronaldo-points article > span { color: #a5463d; font-family: var(--serif); font-size: 1.2rem; }
+.ronaldo-points h3 { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; margin: 0 0 .35rem; }
+.ronaldo-points p { color: var(--muted); font-size: .74rem; line-height: 1.65; margin: 0; max-width: 500px; }
+.ronaldo-finale .eyebrow { color: #e4c4bd; }
+.ronaldo-finale h2 em { color: #dd978c; }
+.return-link { align-items: center; display: inline-flex; text-decoration: none; }
+.return-link span { color: #dd978c; padding-right: .45rem; }
+
+@media (max-width: 760px) {
+  .ronaldo-records { grid-template-columns: 1fr; }
+  .ronaldo-records-image { min-height: 90vw; }
+  .ronaldo-records-copy { padding: 4.2rem 7vw; }
+  .ronaldo-records-copy h2 { font-size: clamp(3.4rem, 13vw, 5rem); }
+}
